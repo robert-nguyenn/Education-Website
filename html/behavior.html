@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Dev</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="../images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="behavior.html">BEHAVIOR</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="interview.html">INTERVIEW</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Behavior &amp; Soft Skills</h1>
+    </section>
+
+    <!-- about us content -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Mastering Behavioral Questions in Coding Interviews</h1>
+          <p>Behavioral questions in coding interviews are designed to assess your interpersonal skills, problem-solving approach, and how well you fit within the company's culture. Unlike technical questions, these focus on your past experiences, decision-making processes, and ability to work under pressure. Preparing for these questions is crucial as they reveal your soft skills and how you handle real-world situations<br><br>
+          At Robert Edu, we emphasize the importance of holistic interview preparation. Our courses provide insights into common behavioral questions and effective strategies to answer them. We guide you on how to articulate your experiences, showcase your achievements, and demonstrate your ability to collaborate and lead. By practicing with mock interviews and receiving feedback, you can refine your responses and present yourself confidently during actual interviews.<br><br>Key behavioral questions often include scenarios like handling conflicts, managing tight deadlines, and working in teams. When answering, it’s essential to use the STAR method (Situation, Task, Action, Result) to structure your responses. This approach helps you provide clear, concise, and compelling answers that highlight your skills and experiences. Remember, the goal is not only to show your technical prowess but also to prove that you are a well-rounded candidate who can thrive in any work environment.</p>
+          <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+
+        <div class="about-col">
+          <img src="../images/aboutus.jpg">
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <hr>
+    <section class="footer">
+      <h1>About Us</h1>
+      <p>At Robert Edu, we're dedicated to empowering the next generation of front-end developers. Our mission is to provide top-notch education, resources, and a supportive community to help learners thrive in the ever-evolving world of web development. With a focus on practical skills and real-world applications, we offer a range of courses, mentorship opportunities, and industry insights to ensure our students are well-equipped for success. Join us and become a part of our global community of passionate developers committed to excellence and innovation.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> by Robert Nguyen</p>
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>   
+  </body>
+</html>

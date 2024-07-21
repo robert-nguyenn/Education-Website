@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Dev</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="../images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="behavior.html">BEHAVIOR</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="interview.html">INTERVIEW</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>The Complete Front-End Developer Roadmap</h1>
+    </section>
+
+    <!-- Course -->
+    <section class="course">
+      <h1>Zero-to-Here Courses</h1>
+      <p>Discover our range of meticulously crafted courses designed to elevate your front-end development skills. Whether you're just starting out, building on existing knowledge, or aiming to master advanced techniques, our Beginner, Intermediate, and Advanced courses provide a comprehensive learning path tailored to your needs. Join us and transform your web development journey today.</p>
+
+      <!--We creat row because we need some cols-->
+      <div class="row">
+        <div class="course-col">
+          <h3>Beginner</h3>
+          <p>Our beginner courses provide a solid foundation in front-end development. You'll start with the basics of HTML and CSS, and gradually progress to JavaScript fundamentals. By the end of this phase, you'll be able to create simple, static web pages and understand the core concepts of web development.</p>
+        </div>
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>In the intermediate courses, you'll build upon your foundational knowledge and start working with more complex tools and technologies. This phase covers advanced JavaScript, TypeScript, React, and CSS preprocessors like SASS and Tailwind CSS. You'll also learn about version control with Git and how to manage larger projects.</p>
+        </div>
+        <div class="course-col">
+          <h3>Advanced</h3>
+          <p>Our advanced courses are designed for those who want to master front-end development. You'll dive into advanced topics such as automated testing, server-side rendering with Next.js, and mobile app development with React Native. These courses will equip you with the skills needed to handle complex projects and excel in a professional environment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="curriculum">
+      <h1>Our Curriculum</h1>
+      <p>This guide is designed to help you navigate the essential skills needed to become a successful front-end developer. Whether you're just starting out or looking to enhance your existing skills, this roadmap provides a clear and structured path. (Copyright 2024 Code with Mosh Hamedani)</p>  
+
+      <div class="table-container">
+        <table>
+            <tr id="header-table">
+              <th>Skill</th>
+              <th>Time Required</th>
+              <th>Learning Phase</th>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>2 weeks</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>1 month</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>Javascript</td>
+              <td>2 months</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>Git</td>
+              <td>2 weeks</td>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <td>TypeScript</td>
+              <td>3 weeks</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>2 months</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>SASS</td>
+              <td>2 weeks</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>Tailwind CSS</td>
+              <td>3 weeks</td>
+              <td>Intermediate</td>
+            </tr> 
+            <tr>
+              <td>Automated Testing</td>
+              <td>1 month</td>
+              <td>Advanced</td>
+            </tr> 
+            <tr>
+              <td>Next.js</td>
+              <td>1.5 months</td>
+              <td>Advanced</td>
+            </tr> 
+            <tr>
+              <td>React Native (Op)</td>
+              <td>2 months</td>
+              <td>Advanced</td>
+            </tr> 
+            <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>1 Year</strong></td>
+            </tr> 
+        </table>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <hr>
+    <section class="footer">
+      <h1>About Us</h1>
+      <p>At Robert Edu, we're dedicated to empowering the next generation of front-end developers. Our mission is to provide top-notch education, resources, and a supportive community to help learners thrive in the ever-evolving world of web development. With a focus on practical skills and real-world applications, we offer a range of courses, mentorship opportunities, and industry insights to ensure our students are well-equipped for success. Join us and become a part of our global community of passionate developers committed to excellence and innovation.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> by Robert Nguyen</p>
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>   
+  </body>
+</html>
