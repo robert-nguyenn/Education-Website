@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 
+      <meta> Tag: This is an HTML tag that provides metadata about the HTML document. Metadata is data about the data in the document, and it's not displayed on the page but is used by browsers, search engines, and other web services.
+      name="viewport": This specifies that the meta tag is setting up the viewport, which is the user's visible area of a web page.
+      width=device-width: This sets the width of the viewport to be equal to the width of the device. This means the webpage will be responsive and adjust its width to match the width of the device it’s being viewed on.  
+      1.0 means the page will be rendered at a 1:1 scale, which means no zoom, and the page appears as it would in a desktop view scaled to the device's width. 
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Dev</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  </head>
+
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="../images/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+          <!-- Put the xmark here because it's need to be above nav link  -->
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <!-- li tag is taking 100% of the available width, proving that li is a block level element. -->
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="html/course.html">COURSE</a></li>
+            <li><a href="html/behavior.html">BEHAVIOR</a></li>
+            <li><a href="html/interview.html">INTERVIEW</a></li>
+            <li><a href="html/contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <!-- When the webpage loads, the navigation links (nav-links) are likely hidden by default, especially on mobile or smaller screens. The menu icon (fa-bars) needs to be visible to allow users to access the hidden navigation links. If the icon were inside the hidden nav-links div, users wouldn't see it and wouldn't be able to open the menu. -->
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Learn_Code_Succeed</h1>
+        <p>Master the art of front-end development and bring your web visions to the real world.</p>
+        <!--A hero button is a prominently styled button designed to attract users' attention, often used in key areas of a webpage such as the hero section—a large, visually appealing area at the top of a website.-->
+        <a href="contact.html" class="hero-btn">Visit us to know more</a>
+      </div>
+    </section>
+
+    <!--Course-->
+    <section class="course">
+      <h1>Zero-to-Here Courses</h1>
+      <p>Discover our range of meticulously crafted courses designed to elevate your front-end development skills. Whether you're just starting out, building on existing knowledge, or aiming to master advanced techniques, our Beginner, Intermediate, and Advanced courses provide a comprehensive learning path tailored to your needs. Join us and transform your web development journey today.</p>
+
+      <div class="row">
+        <div class="course-col green-flag">
+          <h3>Beginner</h3>
+          <p>Our beginner courses provide a solid foundation in front-end development. You'll start with the basics of HTML and CSS, and gradually progress to JavaScript fundamentals. By the end of this phase, you'll be able to create simple, static web pages and understand the core concepts of web development.</p>
+        </div>
+        <div class="course-col blue-flag">
+          <h3>Intermediate</h3>
+          <p>In the intermediate courses, you'll build upon your foundational knowledge and start working with more complex tools and technologies. This phase covers advanced JavaScript, TypeScript, React, and CSS preprocessors like SASS and Tailwind CSS. You'll also learn about version control with Git and how to manage larger projects.</p>
+        </div>
+        <div class="course-col red-flag">
+          <h3>Advanced</h3>
+          <p>Our advanced courses are designed for those who want to master front-end development. You'll dive into advanced topics such as automated testing, server-side rendering with Next.js, and mobile app development with React Native. These courses will equip you with the skills needed to handle complex projects and excel in a professional environment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--community section-->
+    <section class="community">
+      <h1>Our Global Community</h1>
+      <p>Our Global Community brings together front-end developers worldwide, fostering collaboration and knowledge-sharing across platforms like StackOverflow, LeetCode, and Github. These partner companies of Robert Edu provide supporting lectures, technologies, and the latest information about jobs and internships.</p>
+
+      <div class="row">
+        <div class="community-col">
+          <img src="../images/stackoverflow.jpg">
+          <div class="layer">
+            <h3>StackOverflow</h3>
+          </div>
+        </div>
+
+        <div class="community-col">
+          <img src="../images/leetcode.jpeg">
+          <div class="layer">
+            <h3>LeetCode</h3>
+          </div>
+        </div>
+
+        <div class="community-col">
+          <img src="../images/github.png">
+          <div class="layer">
+            <h3>Github</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mentors -->
+    <section class="mentors">
+      <h1>Our Mentors</h1>
+      <p>Meet the brilliant minds guiding our journey at Robert Edu—ChatGPT, Conner Ardman, and David J. Malan are here to inspire and mentor you through your front-end development education."</p>  
+
+      <div class="row">
+        <div class="mentors-col">
+          <img src="../images/davidmalan.jpg">
+          <h3>David J. Malan</h3>
+          <p><strong>Role:</strong> Computer Science Professor<br><br><strong>Expertise:</strong> Teaches foundational computer science concepts, algorithms, and problem-solving skills.<br><br><strong>Background:</strong> Renowned for his engaging teaching style at Harvard University and through online courses.<br><br><strong>*</strong>He is known for turning algorithms into bedtime stories. His code is so clean that even his laundry is jealous!</p>
+        </div>
+        <div class="mentors-col">
+          <img src="../images/connerardman.jpg">
+          <h3>Conner Ardman</h3>
+          <p><strong>Role:</strong> Front-End Development Instructor<br><br><strong>Expertise:</strong> Specializes in teaching HTML, CSS, JavaScript, and modern front-end frameworks like React.<br><br><strong>Background:</strong> Experienced educator with a passion for simplifying complex concepts and fostering practical skills.<br><br><strong>*</strong> Loves CSS so much that he dreams of gradients and prefers a "flexible" approach to problem-solving.</p>
+        </div>
+        <div class="mentors-col">
+          <img src="../images/chatgpt.jpeg">
+          <h3>Chat GPT</h3>
+          <p><strong>Role:</strong> AI Mentor<br><br><strong>Expertise:</strong> Provides guidance on a wide range of topics related to programming, web development, and AI.<br><br><strong>Background:</strong> Utilized for answering technical questions, providing explanations, and offering advice on learning paths.<br><br><strong>*</strong> Always ready with witty responses and insightful advice—just don't ask about the meaning of life!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+    <section class="testimonials">
+      <h1>Student Testimonials</h1>
+      <p>Here's what some of our students have to say about their journey with Robert Edu.</p>
+
+      <div class="row">
+        <div class="testimonial-col">
+          <img src="../images/diego.png">
+          <div>
+            <p>"My experience with Robert Edu has been transformative. The guidance and resources provided have not only deepened my understanding of front-end development but also equipped me with practical skills that are crucial in the industry."</p>
+            <h3>Diego Sic</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div>
+
+        <div class="testimonial-col">
+          <img src="../images/aiden.jpg">
+          <div>
+            <p>"Enrolling in Robert Edu has been one of the best decisions I've made. The interactive learning environment and dedicated instructors have made learning front-end development not only educational but also enjoyable. I feel more confident in my skills and excited about my future career prospects."</p>
+            <h3>Aiden Do</h3>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Call to Action-->
+    <section class="cta">
+      <h1>Enroll for Our Various Online Courses<br>Anywhere from The World</h1>
+      <a href="contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!--Footer-->
+    <hr>
+    <section class="footer">
+      <h1>About Us</h1>
+      <p>At Robert Edu, we're dedicated to empowering the next generation of front-end developers. Our mission is to provide top-notch education, resources, and a supportive community to help learners thrive in the ever-evolving world of web development. With a focus on practical skills and real-world applications, we offer a range of courses, mentorship opportunities, and industry insights to ensure our students are well-equipped for success. Join us and become a part of our global community of passionate developers committed to excellence and innovation.</p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> by Robert Nguyen</p>
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>   
+  </body>
+</html>
